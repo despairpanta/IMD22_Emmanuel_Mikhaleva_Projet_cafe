@@ -55,6 +55,9 @@ header,
 footer {
   background: #d3d1cb;
   color: black;
+  position: sticky;
+  height: 20%;
+  width: 100%;
 }
 
 a {
@@ -73,18 +76,6 @@ header nav {
   transform: translateY(48%);
 }
 
-header {
-  position: sticky;
-  height: 20%;
-  width: 100%;
-}
-
-footer {
-  position: sticky;
-  height: 20%;
-  width: 100%;
-}
-
 h1 {
   font-family: fakir-small-caps-new, sans-serif;
   font-weight: 400;
@@ -97,14 +88,28 @@ h2 {
   font-style: normal;
 }
 
-.main .img-container {
-  height: 50%;
-  width: 50%;
-  margin: auto;
-}
-
 .main {
   padding: 200px 0 0 45px;
+}
+
+// timetable
+
+.timetable-section {
+  margin: 45px 0 40px 0;
+}
+
+.timetable-section h1 {
+  margin-bottom: 25px;
+}
+
+// menu-section
+
+.menu-section {
+  margin: 55px 0 45px 0;
+}
+
+.menu-section h1 {
+  margin-bottom: 25px;
 }
 
 .menu-row {
@@ -114,34 +119,41 @@ h2 {
   justify-content: space-between;
 }
 
-.row h2 {
-  font-size: 20px;
-  margin: 10px 0 10px 0;
-}
-
-.row p {
+.menu-row p {
   font-size: 16px;
 }
 
-@media screen and (max-width: 992px) {
+.menu-card {
+  margin: 40px 0 40px 0;
+}
+
+.menu-card h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
   .menu-row {
     flex-direction: column;
   }
 }
 
-// .event-container {
-//   display: flex;
-//   align-items: flex-start;
-// }
+// event
 
-.poseur-container .img-container {
+.poseur-information {
+  margin: 80px 30px 0 0px;
 }
 
-// .poseur-container,
-// .cabaret-container {
-//   flex-flow: column;
-//   display: flex;
-//   align-items: flex-start;
-//   align-content: space-around;
-//   flex-wrap: wrap;
-// }
+.cabaret-information {
+  margin: 80px 0 0 0px;
+}
+
+// location
+
+.location-section {
+  margin: 45px 0 130px 0;
+}
+
+.location-information {
+  margin: 45px 0 40px 0;
+}
