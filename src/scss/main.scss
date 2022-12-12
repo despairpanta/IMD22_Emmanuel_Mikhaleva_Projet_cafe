@@ -57,6 +57,10 @@ footer {
   color: black;
 }
 
+a {
+  text-decoration: none;
+}
+
 header h1 {
   display: flex;
   justify-content: center;
@@ -75,6 +79,12 @@ header {
   width: 100%;
 }
 
+footer {
+  position: sticky;
+  height: 20%;
+  width: 100%;
+}
+
 h1 {
   font-family: fakir-small-caps-new, sans-serif;
   font-weight: 400;
@@ -87,5 +97,51 @@ h2 {
   font-style: normal;
 }
 
-.main img {
+.main .img-container {
+  height: 50%;
+  width: 50%;
+  margin: auto;
 }
+
+.main {
+  padding: 200px 0 0 45px;
+}
+
+.menu-row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row h2 {
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+
+.row p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-row {
+    flex-direction: column;
+  }
+}
+
+// .event-container {
+//   display: flex;
+//   align-items: flex-start;
+// }
+
+.poseur-container .img-container {
+}
+
+// .poseur-container,
+// .cabaret-container {
+//   flex-flow: column;
+//   display: flex;
+//   align-items: flex-start;
+//   align-content: space-around;
+//   flex-wrap: wrap;
+// }
