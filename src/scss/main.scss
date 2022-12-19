@@ -43,6 +43,10 @@ video {
 // base rules
 // ==================================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: black;
   color: white;
@@ -177,6 +181,10 @@ h2 {
   margin: 45px 0 40px 0;
 }
 
+.location-outsides {
+  margin-bottom: 20px;
+}
+
 // footer contat
 .contact-information {
   padding: 5px 0 0 45px;
@@ -184,4 +192,13 @@ h2 {
 
 .contact {
   margin-bottom: 30px;
+}
+
+// header nav
+
+.horaire-nav:visited,
+.menu-nav:visited,
+.evenement-nav:visited,
+.lieu-nav:visited {
+  fill: #d3d1cb;
 }
